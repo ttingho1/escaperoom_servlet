@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+/* 폰트크기 root 기준값 = 10px (10/16)*100 */
+html {
+  /* font-size: 62.5%; */
+}
+.w1300 {
+  max-width: 1300px;
+  width: 1300px;
+  margin: 0 auto;
+}
+body {
+  font-family: "나눔고딕" , "Nanum Gothic" ,"돋움", dotum, sans-serif;
+}
+#wrap {
+  width: 100%;
+}
+
+.wcontainer {
+	max-width: 100%;
+	width: 100%;
+	background-image: url('../images/bg2.jpg');
+}
+
+section .map iframe {
+	width: 800px;
+}
+section .container {
+  /* background-color: #f5f5f5; */
+  margin-top: 150px;
+  background-image: url('../images/bg2.jpg');
+}
+section .container {
+  /* 플렉스 */
+  display: flex;
+  /* 교차축 레이아웃 */
+  align-items: center;
+  padding-top: 88px;
+  padding-left: 100px;
+  padding-bottom: 88px;
+}
+section .container ul {
+  text-align: center;
+  margin-right: 76px;
+}
+
+section .container h2 {
+  margin-bottom: 36px;
+  font-size: 30px;
+  color: #f5f5f5;
+}
+section .container ul li {
+  margin-bottom: 14px;
+  font-size: 17px;
+  color: #f5f5f5;
+  width: 207px;
+  height: 32px;
+  line-height: 32px;
+  font-weight: normal;
+}
+
+section .container ul li:hover {
+  cursor: pointer;
+  font-weight: 700;
+  color : red;
+}
+/* 마지막 li 버튼은 호버효과 없애기 */
+section .container ul li:last-child a:hover {
+  background-color: transparent;
+}
+
+section .tab-content{
+  display: none;
+  background: #ededed;
+  padding: 15px;
+  width: 798px;
+  height: 367px;
+}
+
+section .tab-content.current{
+display: inherit;
+}
+.container .new_icon {
+  background-color: #ea2c2c;
+  width: 40px;
+  font-size: 10px;
+  text-align: center;
+  padding: 1px;
+  color: #fff;
+  position: relative;
+  left: -245px;
+  top: 189px;
+  border: 1px solid #000;
+}
+/* new 이미지 반짝임 */
+@keyframes blink-effect {
+  50% {
+    opacity: 0;
+  }
+}
+.container .new_icon {
+  animation: blink-effect 1s step-end infinite;
+}
+
+
+/* 바뀌는 내용 */
+section .theme_text {
+  border: 1px solid #000;
+  padding: 20px;
+  line-height: 1.5;
+  margin-left: 30px;
+  width: 492px;
+  text-align: left;
+}
+section .theme_text .theme_title {
+  font-size: 20px;
+  color: #ea2c2c;
+  font-weight: 600;
+  border-bottom: 5px double #ddd;
+  margin: 0 0 20px 0;
+  text-align: center;
+  padding: 20px;
+}
+section .theme_text h4 {
+  font-size: 16px;
+  color: #333333;
+  font-weight: 700;
+  margin-bottom: 20px;  
+}
+section .theme_text p {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 30px;
+  font-size: 14px;
+}
+section .theme_text span {
+  font-size: 14px;
+  color: #333;
+}

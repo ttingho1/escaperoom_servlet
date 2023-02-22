@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+
+.w1260 {
+    width: 1260px;
+    margin: 0 auto;
+}
+
+/* 주의사항2 */
+section .alert2_notice {
+    line-height: 1.5;
+}
+section .alert2_notice h1 {
+    font-size: 38px;
+    color: #EEEEEE;
+    text-align: center;
+    margin-top: 100px;
+    font-weight: 600;
+}
+section .alert2_notice h2 {
+    font-size: 18px;
+    color: #999999;
+    text-align: center;
+    font-weight: 300;
+}
+section .alert2 {
+    margin-top: 60px;
+    /* 배경이미지 */
+    border: 1px solid #000;
+    background-image: url('../images/bg1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: "나눔스퀘어", "NanumSquare", "돋움", dotum, sans-serif;
+    height: 800px;
+}
+section .alert2 h3 {
+    margin-top: 22px;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;   
+}
+section .alert2 p {
+    margin-top: 15px;
+    color: #BBB;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+    text-align: center;
+}
+section .alert2 ul {
+    margin-top: 102px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+section .alert2 ul li {
+    margin: 30px;
+    width: 270px;
+}
+section .alert2 ul li img {
+    margin-left: 35px;
+}

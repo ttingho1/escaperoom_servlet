@@ -1,0 +1,252 @@
+#wrap {
+    max-width: 1920px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.safe_area {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* additional_service */
+.additional_service  {
+    padding: 50px 0;
+    color: #1a1a1a;
+}
+.additional_service h2 {
+    font-size: 28px;
+    font-size: 1.75rem;
+    font-weight: 500;
+    
+    margin-bottom: 35px;
+}
+.additional_service ul {
+    height: 240px;
+    /* 플렉스 */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.additional_service ul li {
+    width: 180px;
+    height: 200px;
+    text-align: center;
+    padding-top: 32px;
+    /* 포지션 위치 기준값 */
+    position: relative;
+}
+.additional_service ul li p {
+    margin-top: 17px;
+    font-size: 15px;
+    font-size: 0.9375rem;
+    line-height: 1.2;
+}
+.additional_service ul li img:nth-child(3) {
+    padding: 10px 0;
+    /* 포지션 */
+    position: absolute;
+    left: 40%;
+    bottom: -40px;
+    z-index: -1;
+    /* 트렌지션 */
+    transition: all 0.2s;
+}
+.additional_service ul li:before {
+    content: "";
+    display: block;
+    width: 180px;
+    height: 200px;
+    background-color: #f4f4f4;
+    /* 포지션 */
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: -1;
+    /* 트렌지션 */
+    transition: all 0.2s;
+}
+.additional_service ul li:hover:before {
+    transform: scaleY(1.2);
+    background-color: #d22c26;
+    box-shadow: 5px 5px 5px #dbdbdb;  
+}
+.additional_service ul li:hover {
+    color: #fff;
+}
+.additional_service ul li:hover img:nth-child(3) {
+    /* 포지션 */
+    position: absolute;
+    bottom: -15px;
+}
+
+
+/* affiliate_service */
+.affiliate_service {
+    background-color: #f4f4f4;
+}
+.affiliate_service .safe_area  {
+    padding: 50px 0;
+    color: #1a1a1a;
+}
+.affiliate_service h2 {
+    font-size: 28px;
+    font-size: 1.75rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.affiliate_service .service_menu {
+    height: 245px;
+    /* 플렉스 */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.affiliate_service .service_menu div {
+    margin: 0 auto;
+    width: 110px;
+    height: 110px;
+    background-color: #fff;;
+    border-radius: 50%;
+    padding: 15px;
+}
+.affiliate_service .service_menu li {
+    width: 110px;
+    height: 160px;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding-top: 32px;
+}
+.affiliate_service .service_menu li p {
+    margin-top: 17px;
+    font-size: 15px;
+    font-size: 0.9375rem;
+    line-height: 1.2;
+}
+.affiliate_service .service_menu li:hover div{
+    background-color: #d22c26;
+}
+.affiliate_service .service_menu li:hover {
+    color: #d22c26;
+}
+
+
+/* affiliate_ad */
+.affiliate_ad {
+    /* 플렉스 */
+    display: flex;
+    flex-flow: row wrap;
+}
+.affiliate_ad .affiliate_slide{
+    width: 1200px;
+    padding-left: 30px;
+}
+.affiliate_ad>img {
+    width: 380px
+}
+.affiliate_ad .control {
+    width: 1200px;
+    height: 50px;
+    border: none;
+    
+    /* 플렉스 */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+.affiliate_ad .control button {
+    margin: 10px 0;
+    border: 1px solid #cdcdcd;
+    cursor: pointer;
+}
+.affiliate_ad .control .btn {
+    border-left: none;
+    border-right: none;
+}
+.affiliate_ad .control .btn .play{
+    display: none;
+}
+.affiliate_ad .slide_gallery ul li {
+    width: 380px;
+}
+.affiliate_ad .slide_gallery ul li p {
+    width: 380px;
+    font-size: 14px;
+    color: #313131;
+    padding: 17px 10px 15px 15px;
+    text-align: left;
+    line-height: 1.8;
+}
+.affiliate_ad .slide_gallery ul li span {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.affiliate_ad .slide_gallery ul li img {
+    width: 256px;
+}
+
+
+
+
+/* =========================================================== */
+
+
+
+/* 셀로판지 효과 */
+
+.slide_gallery .swiper-wrapper .swiper-slide a {
+    position: relative;
+}
+.slide_gallery .swiper-wrapper .swiper-slide a:before {
+    content: "";
+    display: block;
+    width: 97%;
+    height: 74%;
+    background: rgba(0,0,0,0.4);
+    opacity: 0;
+    /* 포지션 */
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    transition: all 0.3s;
+}
+.slide_gallery .swiper-wrapper .swiper-slide a:hover:before {
+    opacity: 0.7;
+}
+
+/* 셀로판지 텍스트 */
+
+.slide_gallery .swiper-wrapper .swiper-slide a div p {
+    font-size: 16px;
+    color: #fff;
+    font-weight: normal;
+    margin-left: -102px;
+    margin-top: 60px;
+    line-height: 1.8;
+    text-align: center;   
+}
+.slide_gallery .swiper-wrapper .swiper-slide a div span {
+    font-size: 16px;
+}
+
+/* 셀로판지 텍스트 이동효과 */
+
+.slide_gallery .swiper-wrapper .swiper-slide a div {
+    position: absolute;
+    left: 30px;
+    top: 0;
+    z-index: 200;
+    opacity: 0;
+    transition: all 0.3s;
+
+
+}
+.slide_gallery .swiper-wrapper .swiper-slide a:hover div {
+    opacity: 1;
+    transform: translateY(30px);
+}
+
+
+
