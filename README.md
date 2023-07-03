@@ -14,7 +14,7 @@ HTML,CSS,JavaScript(jQuery)를 이용하여 웹문서의 기본구조를 이해�
 
 #3. 프로젝트 사용 기술
 
-Java, JSP, Servlet, Html, Css, JavaScript(JQuery)
+Java, JSP, Servlet, Html, Css, JavaScript(JQuery), mvc pattern 1
 
 #4. 프로젝트 구현 페이지
 
